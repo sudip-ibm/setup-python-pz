@@ -92,5 +92,5 @@ jobs:
 
       - name: Test Raw Endpoint Access
         run: |
-          curl -L https://raw.githubusercontent.com/adilhusain-s/actions-runner-python-versions/main/versions-manifest.json | jq empty
+          curl -L https://raw.githubusercontent.com/IBM/python-versions-pz/refs/heads/main/versions-manifest.json | jq empty
         shell: bash

@@ -119,6 +119,10 @@ async function run() {
         core.info(`Detected architecture as 'ppc64', adjusting to 'ppc64le' for download purposes.`);
         arch = 'ppc64le';
       }
+      else if (arch === 's390' || arch === 's390x') {
+        core.info(`Detected architecture as 's390', adjusting to 's390x' for download purposes.`);
+        arch = 's390x';
+      }
       // --- END ADDITION ---
 
       const updateEnvironment = core.getBooleanInput('update-environment');
